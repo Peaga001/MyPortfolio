@@ -1,0 +1,167 @@
+@media (min-width:781px){
+
+    body{
+        width: 100%;
+        margin-top: 5%;
+        color: white;
+        background: linear-gradient(-45deg, #c724f0, #3169e4, #ec1eff, #043b83);
+        background-size: 400% 400%;
+        font-family: 'Ubuntu Mono', monospace;
+
+    }
+    img{
+        width: 50vw;
+        margin-left: 20%;
+    }
+
+    header{
+        padding-bottom: 100px;
+    }
+
+    .nav-bar{
+        width: 30%;
+        right:5%;
+        border: 1px solid black;
+    }
+    .dropdown-menu{
+        background-color: transparent;
+    }
+    
+    .div-intro{
+        padding:0px 30px;
+        width: 50%;
+        height: 100vh;
+        float: left;
+    } 
+    .bt-contact-me{
+
+        background-color: transparent;
+        border: 1px solid black;
+        border-radius:10px;
+        color: black;
+        padding: 16px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+        margin-left: 35%;
+    }
+    
+    .bt-contact-me:hover {
+        color: white;
+        border: 1px solid white;
+    }
+
+    #home, #myprojects, #otherprojects{
+        margin-bottom: 80px;
+    }
+    #home{
+        margin-top: 25px;
+    }
+    .myprojects{
+        height: 100vh;
+    }
+
+    footer{
+        height: 100vh;
+    }
+
+
+
+}
+
+@media (max-width: 780px)
+{
+    body{
+        width: 100%;
+        margin-top: 5%;
+        color: white;
+        background: linear-gradient(-45deg, #c724f0, #3169e4, #ec1eff, #043b83);
+        background-size: 400% 400%;
+        font-family: 'Ubuntu Mono', monospace;
+    }
+    img{
+        width: 100%;
+    }
+
+    header{
+        padding-bottom: 100px;
+    }
+
+    .nav-bar{
+        width: 85%;
+        right: 5%;
+    }
+    .nav-link{
+        background-color: white;
+        width: 50%;
+        color: black !important;
+        text-align: center;
+        border: 1px solid black;
+        border-radius: 10px;
+    }
+    .dropdown-menu{
+        background-color: white;
+        border: 1px solid black;
+        border-radius: 10px;
+    }
+    .div-intro{
+        padding: 0px 30px;
+        width: 100%;
+        height: 100vh;
+        float: left;
+        
+    }
+
+    .bt-contact-me{
+
+        background-color: transparent;
+        border: 1px solid black;
+        border-radius:10px;
+        color: black;
+        padding: 16px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+        margin-left: 25%;
+    }
+    
+    .bt-contact-me:hover {
+        color: white;
+        border: 1px solid white;
+        text-shadow: #043b83;
+    }
+
+    #home, #myprojects, #otherprojects{
+        margin-bottom: 80px;
+    }
+    .myprojects{
+        height: 100vh;
+    }
+
+    .navbar-toggler{
+        position: relative;
+        float: left;
+    }
+
+    .navbar-collapse{
+        margin-top: -15%;
+    }
+
+    li{
+        width: auto;
+    }
+
+    footer{
+        height: 100vh;
+    }
+
+  
+}
