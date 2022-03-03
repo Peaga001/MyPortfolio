@@ -21,7 +21,7 @@ header{
 .navbar{
     width: 30vw;
     border: 1px solid black;
-    position: relative;
+    position: fixed;
     float: right;
 }
 .dropdown-menu{
@@ -67,6 +67,19 @@ header{
 }
 .myprojects{
     height: 100vh;
+}
+
+.img-footer{
+    max-width: 25vw;
+    border-radius: 130px;
+    display: block;
+    width: auto;
+    height: auto;
+}
+
+a{
+    text-decoration: none;
+    color: white;
 }
 
 footer{
