@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" cReferences in javascriptontent="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
@@ -12,6 +12,132 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=PT+Sans:wght@700&family=Ubuntu+Mono&display=swap" rel="stylesheet">
+
+
+    <style>
+
+      body{
+          width: 100%;
+          margin-top: 5%;
+          background: linear-gradient(-45deg, #c724f0, #3169e4, #ec1eff, #043b83);
+          background-size: 400% 400%;
+          font-family: 'Ubuntu Mono', monospace;
+
+      }
+      .imgs{
+          width: 50vw;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+      }
+
+      header{
+          padding-bottom: 100px;
+      }
+
+      .navbar{
+          width: 30vw;
+          border: 1px solid black;
+          position: fixed;
+          float: right;
+      }
+      .dropdown-menu{
+          background-color: white;
+      }
+
+      .div-intro{
+          width: 50vw;
+          height: 100vh;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+      } 
+
+      .bt-contact-me{
+
+          background-color: transparent;
+          border: 1px solid black;
+          border-radius:10px;
+          color: black;
+          padding: 16px 32px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 16px;
+          margin: 4px 2px;
+          transition-duration: 0.4s;
+          cursor: pointer;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+      }
+
+      .bt-contact-me:hover {
+          color: white;
+          border: 1px solid white;
+      }
+
+      #home, #myprojects, #otherprojects{
+          margin-bottom: 80px;
+      }
+      #home{
+          margin-top: 25px;
+      }
+      .myprojects{
+          height: 100vh;
+      }
+
+      a{
+          text-decoration: none;
+          color: white;
+      }
+
+      footer{
+          height: 100vh;
+      }
+
+      .mobile-footer img{
+          width: 3vw;
+      }
+
+      .img-footer{
+          max-width: 25vw;
+          border-radius: 130px;
+          display: block;
+          width: auto;
+          height: auto;
+      }
+
+      @media (max-width:650px)
+      {
+        .navbar{
+            width: 85vw;
+            border: 1px solid black;
+            position: fixed;
+            float: center;
+        }
+        .div-intro{
+            width: 80vw;
+            height: 100vh;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top:15vh;
+        } 
+        .myprojects{
+          height: 100vh;
+          margin-top:20vh;
+        }
+        .mobile-footer{
+          height: 80vh;
+        }
+        .mobile-footer img{
+          width: 3vw;
+        }
+
+      }
+
+    </style>
 
 </head>
 <body class="container">
@@ -75,36 +201,40 @@
     <div class ="myprojects">
         <h5 class="text-center">Title</h5>
         <p class="text-center">Description</p>
-        <img src="./assets/imgs/monkeyprogramer.png" alt="">
+        <img src="./assets/imgs/monkeyprogramer.png" class="imgs">
     </div>
 
     <div class="clearfix"></div>
 
   <footer>
 
-    <br id="othercontacts">
-    <h1 class="text-center">Contacts</h3><br>
-    <p class="text-center">
-      <a>
-        <img src="./assets/imgs/icon-gmail.png" style="width: 5vw;" alt="">phalmeida001@gmail.com
-      </a>
-    </p><br>
+    <div class="mobile-footer">
 
-    <p class="text-center">
-      <a href="https://www.linkedin.com/in/peagadev/" target="_blank">
-        <img src="./assets/imgs/icon-linkedin.png" style="width: 5vw;" alt="">linkedin.com/in/peagadev
-      </a>
-    </p><br>
+      <br id="othercontacts">
+      <h1 class="text-center">Contacts</h3><br>
+      <p class="text-center">
+        <a>
+          <img src="./assets/imgs/icon-gmail.png">phalmeida001@gmail.com
+        </a>
+      </p><br>
 
-    <p class="text-center">
-      <a href="https://github.com/Peaga001" target="_blank">
-        <img src="./assets/imgs/icon-github.png" style="width: 5vw;" alt="">github.com/Peaga001
-      </a>
-    </p><br>
+      <p class="text-center">
+        <a href="https://www.linkedin.com/in/peagadev/" target="_blank">
+          <img src="./assets/imgs/icon-linkedin.png">linkedin.com/in/peagadev
+        </a>
+      </p><br>
 
+      <p class="text-center">
+        <a href="https://github.com/Peaga001" target="_blank">
+          <img src="./assets/imgs/icon-github.png">github.com/Peaga001
+        </a>
+      </p><br>
+
+    </div>
+    
     <h4 class="text-center">Thank you for your attention</h4>
     <img src="./assets/imgs/img-footer.jpeg" class="img-footer" alt="">
-    
+      
   
   </footer>
 
