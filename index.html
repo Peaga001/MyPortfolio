@@ -1,202 +1,214 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
+<html lang="pt-BR">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>My Portfolio</title>
+      <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
 
-    <!--Fonts Google Reference-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=PT+Sans:wght@700&family=Ubuntu+Mono&display=swap" rel="stylesheet">
+      <!--Fonts Google Reference-->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=PT+Sans:wght@700&family=Ubuntu+Mono&display=swap" rel="stylesheet">
 
 
-    <style>
+      <style>
+        /*Default css style*/
+        body{
+            width: 100%;
+            margin-top: 5%;
+            color: white;
+            background: linear-gradient(-45deg, #c724f0, #3169e4, #ec1eff, #043b83);
+            background-size: 400% 400%;
+            font-family: 'Ubuntu Mono', monospace;
 
-      body{
-          width: 100%;
-          margin-top: 5%;
-          background: linear-gradient(-45deg, #c724f0, #3169e4, #ec1eff, #043b83);
-          background-size: 400% 400%;
-          font-family: 'Ubuntu Mono', monospace;
-
-      }
-      .imgs{
-          width: 50vw;
-          display: block;
-          margin-left: auto;
-          margin-right: auto;
-      }
-
-      header{
-          padding-bottom: 100px;
-      }
-
-      .navbar{
-          width: 30vw;
-          border: 1px solid black;
-          position: fixed;
-          float: right;
-      }
-      .dropdown-menu{
-          background-color: white;
-      }
-
-      .div-intro{
-          width: 50vw;
-          height: 100vh;
-          display: block;
-          margin-left: auto;
-          margin-right: auto;
-      } 
-
-      .bt-contact-me{
-
-          background-color: transparent;
-          border: 1px solid black;
-          border-radius:10px;
-          color: black;
-          padding: 16px 32px;
-          text-align: center;
-          text-decoration: none;
-          display: inline-block;
-          font-size: 16px;
-          margin: 4px 2px;
-          transition-duration: 0.4s;
-          cursor: pointer;
-          display: block;
-          margin-left: auto;
-          margin-right: auto;
-      }
-
-      .bt-contact-me:hover {
-          color: white;
-          border: 1px solid white;
-      }
-
-      #home, #myprojects, #otherprojects{
-          margin-bottom: 80px;
-      }
-      #home{
-          margin-top: 25px;
-      }
-      .myprojects{
-          height: 100vh;
-      }
-
-      a{
-          text-decoration: none;
-          color: white;
-      }
-
-      footer{
-          height: 100vh;
-      }
-
-      .mobile-footer img{
-          width: 3vw;
-      }
-
-      .img-footer{
-          max-width: 25vw;
-          border-radius: 130px;
-          display: block;
-          width: auto;
-          height: auto;
-      }
-
-      @media (max-width:650px)
-      {
+        }
+        .imgs{
+            width: 50vw;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        header{
+            padding-bottom: 100px;
+        }
         .navbar{
-            width: 85vw;
+            width: 30vw;
             border: 1px solid black;
             position: fixed;
-            float: center;
+            float: right;
         }
+        .dropdown-menu{
+            background-color: white;
+        }
+
         .div-intro{
-            width: 80vw;
+            width: 50vw;
             height: 100vh;
             display: block;
             margin-left: auto;
             margin-right: auto;
-            margin-top:15vh;
+            margin-top: 15vh;
         } 
+
+        .bt-contact-me{
+
+            background-color: transparent;
+            border: 1px solid black;
+            border-radius:10px;
+            color: black;
+            padding: 16px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .bt-contact-me:hover {
+            color: white;
+            border: 1px solid white;
+        }
+
+        #myprojects{
+            margin-bottom: 20vh;
+        }
+
+        #othercontacts{
+            margin-bottom: 20vh;
+        }
+
         .myprojects{
-          height: 100vh;
-          margin-top:20vh;
+            height: 100vh;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        footer{
+            height: 100vh;
         }
         .mobile-footer{
-          height: 80vh;
+          margin-top: 15vh;
         }
         .mobile-footer img{
-          width: 3vw;
+            width: 3vw;
+        }
+        .img-footer{
+            width: 20vw !important;
+            border-radius: 130px;
+            margin-left: 32vw;
         }
 
-      }
 
-    </style>
+        /*Css responsive for mobile*/
+        @media (max-width:650px)
+        {
+          .navbar{
+              width: 95vw;
+              border: 1px solid black;
+              position: fixed;
+              float: center;
+          }
+          .div-intro{
+              width: 80vw;
+              height: 100vh;
+              display: block;
+              margin-left: auto;
+              margin-right: auto;
+              margin-top:18vh;
+          } 
+          .myprojects{
+            height: 80vh;
+            margin-top:10vh;
+          }
+          .mobile-footer{
+            height: 80vh;
+          }
+          .mobile-footer img{
+            width: 3vw;
+          }
 
-</head>
-<body class="container">
+          .img-footer{
+            width: 25vw !important;
+            border-radius: 130px;
+            margin-left: 34vw;
+          }
 
-    <!--Itens:
-    * - Navigation bar-->
+          #myprojects{
+            margin-bottom: 25vh;
+          }
+
+          #othercontacts{
+            margin-bottom: 25vh;
+          }
+        }
+      </style>
+
+  </head>
+
+  <body class="container">
+
+    <!--Reference-->
+    <div id="home"></div>
+
     <header>
-        <!--Navigation bar-->
-            <nav class="navbar navbar-expand-lg navbar-dark">
-                <div class="container-fluid">
+      <!--Navigation bar-->
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
 
-                  <a class="navbar-brand" href="#"></a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
+          <a class="navbar-brand" href="#"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
-                      </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#home">Home</a>
+              </li>
 
-                      <li class="nav-item">
-                        <a class="nav-link" href="#myprojects">My Projects</a>
-                      </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#myprojects">My Projects</a>
+              </li>
 
-                      <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Contact-Me
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <li><a class="dropdown-item" href="https://www.linkedin.com/in/peagadev/" target="_blank">Linkedin</a></li>
-                          <li><a class="dropdown-item" href="https://github.com/Peaga001" target="_blank">GitHub</a></li>
-                          <li><a class="dropdown-item" href="#othercontacts">Other Contacts</a></li>
-                        </ul>
-                      </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Contact-Me</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="https://www.linkedin.com/in/peagadev/" target="_blank">Linkedin</a></li>
+                  <li><a class="dropdown-item" href="https://github.com/Peaga001" target="_blank">GitHub</a></li>
+                  <li><a class="dropdown-item" href="#othercontacts">Other Contacts</a></li>
+                </ul>
+              </li>
 
-                    </ul>
-                  </div>
-              </nav>
+            </ul>
+          </div>
         </div>
+      </nav>
+      
     </header>
 
-    <br id="home">
     <!--Introduction div-->
     <div class="div-intro">
-
         <h1 class="text-center">Pedro Henrique Almeida Barros</h1>
         <h5 class="text-center">Programer - PHP/JS/ANGULAR/JAVA</h5>
         <p class="text-center">Efect text</p><br>
-
         <button class="bt-contact-me">Contact-Me</button>
-        
     </div>
-    
+
+    <!--Reference-->
+    <div id="myprojects"></div>
+
+    <!--Clear-->
     <div class="clearfix"></div>
 
-    <br id="myprojects">
     <!--My projects div-->
     <div class ="myprojects">
         <h5 class="text-center">Title</h5>
@@ -204,43 +216,51 @@
         <img src="./assets/imgs/monkeyprogramer.png" class="imgs">
     </div>
 
+    <!--Clear-->
     <div class="clearfix"></div>
 
-  <footer>
 
-    <div class="mobile-footer">
+    <!--Reference-->
+    <div id="othercontacts"></div>
 
-      <br id="othercontacts">
-      <h1 class="text-center">Contacts</h3><br>
-      <p class="text-center">
-        <a>
-          <img src="./assets/imgs/icon-gmail.png">phalmeida001@gmail.com
-        </a>
-      </p><br>
+    <footer>
 
-      <p class="text-center">
-        <a href="https://www.linkedin.com/in/peagadev/" target="_blank">
-          <img src="./assets/imgs/icon-linkedin.png">linkedin.com/in/peagadev
-        </a>
-      </p><br>
+      <!--Div reference for mobile tweaks-->
+      <div class="mobile-footer">
 
-      <p class="text-center">
-        <a href="https://github.com/Peaga001" target="_blank">
-          <img src="./assets/imgs/icon-github.png">github.com/Peaga001
-        </a>
-      </p><br>
+        <h1 class="text-center">Contacts</h3><br>
 
-    </div>
-    
-    <h4 class="text-center">Thank you for your attention</h4>
-    <img src="./assets/imgs/img-footer.jpeg" class="img-footer" alt="">
-      
-  
-  </footer>
+        <!--Social Icons-->
+
+        <!--Email-->
+        <p class="text-center">
+          <a><img src="./assets/imgs/icon-gmail.png">phalmeida001@gmail.com</a>
+        </p><br>
+
+        <!--Linkedin-->
+        <p class="text-center">
+          <a href="https://www.linkedin.com/in/peagadev/" target="_blank">
+            <img src="./assets/imgs/icon-linkedin.png">linkedin.com/in/peagadev</a>
+        </p><br>
+
+        <!--GitHub-->
+        <p class="text-center">
+          <a href="https://github.com/Peaga001" target="_blank">
+            <img src="./assets/imgs/icon-github.png">github.com/Peaga001</a>
+        </p><br>
+
+        <!--Thanks-->
+        <h4 class="text-center">Thank you for your attention</h4>
+        <img src="./assets/imgs/img-footer.jpeg" class="img-footer">
+        
+      </div>
+
+    </footer>
 
     <!--References in javascript-->
     <div class="js-src">
         <script src="./assets/js/bootstrap.min.js"></script>
     </div>
-</body>
+
+  </body>
 </html>
