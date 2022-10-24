@@ -167,60 +167,65 @@
           width: 60px;
         }
 
-        .w-10-vw {
-          width: 10vw;
+        .div-content-languages {
+            width: 50vw;
+            margin-left: 30vw;
+            margin-bottom: 2vw;
         }
 
-        .geek-search {
-          width: 18vw;
-        }
-
-        .api-rest-user, .e-commerce {
-          width: 10vw;
-        }
-
-        .project-mvc, .test-aix, .project-01 {
-            width: 15vw;
+        .return-div {
+            margin-top: 2vw;
+            margin-left: 30vw;
+            font-size: 15px;
         }
 
         /*Css responsive for mobile*/
         @media (max-width:650px)
         {
-            .navbar{
+            .imgs {
                 width: 95vw;
+                margin-left: auto;
+                margin-right: auto;
+                display: grid;
+                margin: 10px;
+            }
+
+            .navbar{
+                width: 98vw;
                 border: 1px solid black;
                 position: fixed;
                 float: initial;
+                margin: 3px;
             }
 
             .div-intro{
-            width: 80vw;
-            height: 100vh;
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            margin-top:18vh;
+                width: 80vw;
+                height: 100vh;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top:18vh;
             }
 
             .myprojects{
-            height: auto;
-            margin-top:10vh;
+                height: auto;
+                margin-top:10vh;
             }
 
             .mobile-footer{
-            height: 80vh;
+                height: 80vh;
             }
 
             .mobile-footer img{
-            width: 3vw;
+                width: 3vw;
             }
 
             .img-footer{
-            width: 25vw !important;
-            border-radius: 130px;
-            margin-left: auto;
-            margin-right: auto;
-            display: block;
+                width: 25vw !important;
+                border-radius: 130px;
+                margin-left: auto;
+                margin-right: auto;
+                display: block;
             }
 
             .div-languages {
@@ -228,25 +233,26 @@
                 font-size: 20px;
             }
 
-            .geek-search {
-                width: 70vw;
+            .div-content-languages {
+                width: 100vw;
+                margin: 0;
             }
 
-            .api-rest-user, .e-commerce {
-                width: 40vw;
+            .div-content-languages img {
+                margin-left: auto;
+                margin-right: auto;
+                display: block;
             }
 
-            .project-mvc, .test-aix, .project-01 {
-                width: 64vw;
+            .return-div {
+                margin-top: 2vw;
+                margin-left: 33vw;
             }
 
-            #myprojects{
-            margin-bottom: 25vh;
+            #myprojects, #othercontacts{
+                margin-bottom: 25vh;
             }
 
-            #othercontacts{
-            margin-bottom: 25vh;
-            }
         }
       </style>
 
@@ -294,12 +300,14 @@
       
     </header>
 
+    <span id="head"></span>
+
     <!--Introduction div-->
     <div class="div-intro">
         <h1 class="text-center">Pedro Henrique Almeida Barros</h1>
         <h5 class="text-center">Programer - PHP/JS/ANGULAR/JAVA</h5>
         <p class="text-center">Efect text</p><br>
-        <button class="bt-contact-me">Contact-Me</button>
+        <button class="bt-contact-me"><a href="#othercontacts">Contact-Me</a></button>
     </div>
 
     <!--Reference-->
@@ -420,19 +428,13 @@
             <h3 class="text-center">Geek Search</h3>
             <p class="text-center">App development aimed at the best prices in the geek world.</p>
 
-            <div class="div-languages geek-search">
+            <div class="div-content-languages">
 
-              <div class="form-check form-check-inline">
                 <img alt="" src="./assets/imgs/reactPng.png" class="w-50-px">
-              </div>
 
-              <div class="form-check form-check-inline">
                 <img alt="" src="./assets/imgs/ionicPng.png" class="w-60-px">
-              </div>
 
-              <div class="form-check form-check-inline">
                 <img alt="" src="./assets/imgs/typescriptPng.png" class="w-35-px">
-              </div>
 
             </div>
 
@@ -455,15 +457,11 @@
               Creation of an api for editing a user's registration. Some bonus endpoints can be implemented.
             </p>
 
-            <div class="div-languages api-rest-user">
+            <div class="div-content-languages">
 
-              <div class="form-check form-check-inline">
                 <img alt="" src="./assets/imgs/laravelPng.png" class="w-30-px">
-              </div>
 
-              <div class="form-check form-check-inline">
                 <img alt="" src="./assets/imgs/jsPng.png" class="w-35-px">
-              </div>
 
             </div>
 
@@ -488,15 +486,11 @@
             Login system, account creation and password recovery done in php.
           </p>
 
-          <div class="div-languages e-commerce">
+          <div class="div-content-languages">
 
-            <div class="form-check form-check-inline">
               <img alt="" src="./assets/imgs/laravelPng.png" class="w-30-px">
-            </div>
 
-            <div class="form-check form-check-inline">
               <img alt="" src="./assets/imgs/jsPng.png" class="w-35-px">
-            </div>
 
           </div>
 
@@ -519,19 +513,13 @@
               Development made in order to learn the mvc structure, back-end made in php.
             </p>
 
-            <div class="div-languages project-mvc">
+            <div class="div-content-languages">
 
-              <div class="form-check form-check-inline">
                 <img alt="" src="./assets/imgs/phpPng.png" class="w-60-px">
-              </div>
 
-              <div class="form-check form-check-inline">
                 <img alt="" src="./assets/imgs/cssPng.png" class="w-35-px">
-              </div>
 
-              <div class="form-check form-check-inline">
                 <img alt="" src="./assets/imgs/jsPng.png" class="w-35-px">
-              </div>
 
             </div>
 
@@ -555,19 +543,13 @@
               CRUD development with php logic for junior dev vacancy.
             </p>
 
-            <div class="div-languages test-aix">
+            <div class="div-content-languages">
 
-              <div class="form-check form-check-inline">
                 <img alt="" src="./assets/imgs/phpPng.png" class="w-60-px">
-              </div>
 
-              <div class="form-check form-check-inline">
                 <img alt="" src="./assets/imgs/cssPng.png" class="w-35-px">
-              </div>
 
-              <div class="form-check form-check-inline">
                 <img alt="" src="./assets/imgs/jsPng.png" class="w-35-px">
-              </div>
 
             </div>
 
@@ -586,19 +568,13 @@
           <h3 class="text-center">My first front end development</h3>
           <p class="text-center">My first project using HTML, CSS, JS languages ​​and getting to know Bootstrap and Jquery frameworks</p>
 
-          <div class="div-languages project-01">
+          <div class="div-content-languages">
 
-            <div class="form-check form-check-inline">
               <img alt="" src="./assets/imgs/htmlPng.png" class="w-30-px">
-            </div>
 
-            <div class="form-check form-check-inline">
               <img alt="" src="./assets/imgs/cssPng.png" class="w-35-px">
-            </div>
 
-            <div class="form-check form-check-inline">
               <img alt="" src="./assets/imgs/jsPng.png" class="w-35-px">
-            </div>
 
           </div>
 
@@ -616,16 +592,15 @@
     <!--Clear-->
     <div class="clearfix"></div>
 
-
-    <!--Reference-->
-    <div id="othercontacts"></div>
-
     <footer>
+
+      <!--Reference-->
+      <div id="othercontacts"></div>
 
       <!--Div reference for mobile tweaks-->
       <div class="mobile-footer">
 
-        <h1 class="text-center">Contacts</h3><br>
+        <h3 class="text-center">Contacts</h3><br>
 
         <!--Social Icons-->
 
@@ -649,6 +624,13 @@
         <!--Thanks-->
         <h4 class="text-center">Thank you for your attention</h4>
         <img alt="" src="./assets/imgs/img-footer.jpeg" class="img-footer">
+
+        <div class="return-div">
+          <a href="#head">
+            <img alt="" src="assets/imgs/arrowUpPng.png" href="#head">
+            Return
+          </a>
+        </div>
         
       </div>
 
